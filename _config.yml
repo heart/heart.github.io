@@ -1,0 +1,13 @@
+# Site settings
+
+title: 'Heart Narongrit Kanhanoi — Software Engineer, CTO'
+description: 'Sharing technical knowledge, ideas, and insights across software engineering, AI, and system design.'
+url: 'https://heart.github.io'
+baseurl: ''
+author: 'Heart Narongrit Kanhanoi'
+github_username: 'heart'
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
