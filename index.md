@@ -10,7 +10,7 @@ title: 'Home'
       <h1 class="text-4xl font-bold tracking-tight text-slate-950 md:text-6xl">Heart Narongrit Kanhanoi</h1>
       <p class="mt-4 text-lg text-slate-500">
         ผมเป็นวิศวกรซอฟต์แวร์ที่ชอบเล่าเรื่องเทคโนโลยีให้เข้าใจง่าย
-        มีความชำนาญด้าน Rust, Backend Architecture, และการออกแบบระบบที่ปลอดภัยและ scale ได้
+        มีความชำนาญด้าน Front-End, Go, Rust, Backend Architecture, และการออกแบบระบบที่ปลอดภัยและ scale ได้
       </p>
     </div>
   </div>
