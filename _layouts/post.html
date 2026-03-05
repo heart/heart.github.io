@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="py-10 md:py-14">
+  <div class="mx-auto w-[min(900px,92%)]">
+    <article class="rounded-2xl border border-slate-900/10 bg-white p-5 md:p-7">
+      <header class="mb-5">
+        <p class="text-sm text-slate-500">{{ page.date | date: "%d %b %Y" }}</p>
+      </header>
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</section>

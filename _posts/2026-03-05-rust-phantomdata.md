@@ -7,6 +7,8 @@ categories: rust type-system
 
 # มาเล่าเรื่อง PhantomData ใน Rust
 
+![Rust Logo](/assets/rust_logo.png)
+
 เริ่มจากปัญหาก่อน แล้วค่อย ๆ ไล่ไปทีละขั้น
 
 ---
@@ -247,4 +249,4 @@ PhantomData ไม่ได้เพิ่มขนาดของ struct เล
 
 ซึ่งเป็นแนวคิดสำคัญของ Rust ที่เรียกว่า
 
-> **Zero-cost abstractions**
+**Zero-cost abstractions**

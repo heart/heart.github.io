@@ -1,35 +1,46 @@
 <!doctype html>
 <html lang="th">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} · {{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav-row">
-        <a class="logo" href="{{ "/" | relative_url }}">HT</a>
-        <nav class="site-nav">
-          <a href="{{ "/" | relative_url }}#about">About</a>
-          <a href="{{ "/" | relative_url }}#projects">Projects</a>
-          <a href="{{ "/" | relative_url }}#content">Content</a>
-        </nav>
-      </div>
-    </header>
 
-    <main>
-      {{ content }}
-    </main>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    {{ page.title }} ·
+    {{ site.title }}
+  </title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
 
-    <footer class="site-footer">
-      <div class="container footer-row">
-        <div>© {{ "now" | date: "%Y" }} {{ site.title }}</div>
+<body class="min-h-screen bg-slate-50 font-['Inter','Segoe_UI',system-ui,sans-serif] text-slate-800 antialiased">
+  <header class="sticky top-0 z-20 border-b border-slate-900/10 bg-slate-50/90 backdrop-blur">
+    <div class="mx-auto flex w-[min(1100px,92%)] items-center justify-between py-5">
+
+      <a class="place-items-center font-semibold text-slate-900 flex flex-col" href="{{ "/" | relative_url }}"><img src="/assets/love-always-wins.png" class="w-10">
+        <div class="text-lg">Heart's Github Page</div>
+      </a>
+
+
+      <nav class="hidden items-center gap-5 text-sm text-slate-500 md:flex">
+        <a class="transition-colors hover:text-slate-900" href="{{ "/" | relative_url }}#jobs">การทำงาน</a>
+        <a class="transition-colors hover:text-slate-900" href="{{ "/" | relative_url }}#content">บทความ</a>
+      </nav>
+    </div>
+  </header>
+  <main class="min-h-[calc(100vh-180px)]">
+    {{ content }}
+  </main>
+  <footer class="border-t border-slate-900/10 py-8 text-sm text-slate-500 md:py-12">
+    <div class="mx-auto flex w-[min(1100px,92%)] items-center justify-between">
+      <div>©
+        {{ "now" | date: "%Y" }}
+        {{ site.title }}
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

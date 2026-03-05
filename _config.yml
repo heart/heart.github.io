@@ -9,5 +9,10 @@ github_username: 'heart'
 
 # Build settings
 theme: minima
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 plugins:
   - jekyll-feed

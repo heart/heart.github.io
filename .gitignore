@@ -3,3 +3,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .bundle/
+vendor/bundle/
+.gem/
+*.log
+tmp/
+.DS_Store
+node_modules/

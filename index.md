@@ -1,77 +1,49 @@
 ---
 layout: default
-title: "Home"
+title: 'Home'
 ---
 
 <section class="hero">
-  <div class="container hero-inner fade-in">
-    <img class="avatar" src="{{ "/assets/heart.jpeg" | relative_url }}" alt="Heart profile">
-    <h1 class="hero-title">Heart</h1>
-    <p class="hero-lead">
-      ผมเป็นวิศวกรซอฟต์แวร์ที่ชอบเล่าเรื่องเทคโนโลยีให้เข้าใจง่าย
-      มีความชำนาญด้าน Rust, Backend Architecture, และการออกแบบระบบที่ปลอดภัยและขยายได้
+  <div class="mx-auto grid w-[min(1100px,92%)] animate-fade-in items-center gap-6 py-8 md:grid-cols-[136px_1fr] md:py-16 ">
+    <img class="mx-auto h-[136px] w-[136px] rounded-full border-4 border-white object-cover shadow-xl md:mx-0" src="{{ "/assets/heart.jpeg" | relative_url }}" alt="Heart profile">
+    <div>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-950 md:text-6xl">Heart Narongrit Kanhanoi</h1>
+      <p class="mt-4 text-lg text-slate-500">
+        ผมเป็นวิศวกรซอฟต์แวร์ที่ชอบเล่าเรื่องเทคโนโลยีให้เข้าใจง่าย
+        มีความชำนาญด้าน Rust, Backend Architecture, และการออกแบบระบบที่ปลอดภัยและ scale ได้
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="py-6 md:py-8" id="jobs">
+  <div class="mx-auto w-[min(1100px,92%)]">
+    <h2 class="text-2xl font-semibold tracking-tight text-slate-950">การทำงาน</h2>
+    <p class="mt-3 text-slate-500">
+      เป็น CTO ที่บริษัท
+      <a class="text-sky-600 underline underline-offset-4" href="https://pams.ai" target="_blank" rel="noopener noreferrer">https://pams.ai</a>
     </p>
-    <div class="hero-cta">
-      <a class="btn primary" href="#projects">ดูผลงาน</a>
-      <a class="btn" href="#content">อ่านคอนเทนต์</a>
-    </div>
+    <p class="mt-3 text-slate-500">Customer Data Solution ที่เป็นแพลตฟอร์ม AI สำหรับธุรกิจ</p>
   </div>
 </section>
 
-<section class="section" id="about">
-  <div class="container">
-    <div class="section-title">เกี่ยวกับฉัน</div>
-    <p class="section-sub">
-      ผมสนใจงานที่ต้องบาลานซ์ระหว่างคุณภาพโค้ด ความเร็วในการส่งมอบ และผลลัพธ์ทางธุรกิจ
-      โดยโฟกัสกับงานระบบหลังบ้าน การออกแบบโดเมน และการทำให้โค้ดปลอดภัยตั้งแต่ระดับคอมไพล์
-    </p>
-    <div class="about-grid">
-      <div class="about-card">
-        <div class="tag">Rust</div>
-        <p>ออกแบบ type-safe API และระบบที่เน้นความถูกต้องตั้งแต่ compile time</p>
-      </div>
-      <div class="about-card">
-        <div class="tag">Backend</div>
-        <p>พัฒนา service ที่ maintain ได้ง่าย รองรับการเติบโต และสื่อสารกับทีมได้ชัดเจน</p>
-      </div>
-      <div class="about-card">
-        <div class="tag">Architecture</div>
-        <p>ออกแบบโครงสร้างระบบให้สมดุลระหว่างความยืดหยุ่น ความเร็ว และความเสถียร</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="projects">
-  <div class="container">
-    <div class="section-title">ผลงาน</div>
-    <p class="section-sub">บริษัทที่กำลังโฟกัส: pams.ai</p>
-    <div class="project-grid">
-      <article class="project-card">
-        <div class="tag">Company</div>
-        <div class="project-title">pams.ai</div>
-        <p class="section-sub">
-          แพลตฟอร์ม AI ที่มุ่งเน้นการใช้งานจริงในธุรกิจ พร้อมแนวทางพัฒนาระบบที่ยืดหยุ่นและต่อยอดได้
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="content">
-  <div class="container">
-    <div class="section-title">Content</div>
-    <p class="section-sub">เมนูบทความ</p>
-    <div class="writing-list">
+<section class="py-8 md:py-8" id="content">
+  <div class="mx-auto w-[min(1100px,92%)]">
+    <h2 class="text-2xl font-semibold tracking-tight text-slate-950">Content</h2>
+    <p class="mt-3 text-slate-500">เมนูบทความ</p>
+    <div class="mt-5 grid gap-4">
       {% if site.posts.size > 0 %}
         {% for post in site.posts %}
-          <a class="writing-item" href="{{ post.url | relative_url }}">
-            <strong>{{ post.title }}</strong>
-            <span>{{ post.date | date: "%d %b %Y" }}</span>
+          <a class="flex items-center gap-4 rounded-2xl border border-slate-900/10 bg-white px-4 py-4 transition hover:-translate-y-0.5 hover:shadow-lg" href="{{ post.url | relative_url }}">
+            <img class="h-14 w-14 rounded-xl object-cover" src="{{ "/assets/content-writing.png" | relative_url }}" alt="Writing icon">
+            <span class="block">
+              <strong class="block text-slate-900">{{ post.title }}</strong>
+              <span class="text-sm text-slate-500">{{ post.date | date: "%d %b %Y" }}</span>
+            </span>
           </a>
         {% endfor %}
       {% else %}
-        <div class="writing-item">ยังไม่มีบทความ</div>
+        <div class="rounded-2xl border border-slate-900/10 bg-white px-4 py-4 text-slate-500">ยังไม่มีบทความ</div>
       {% endif %}
     </div>
   </div>
