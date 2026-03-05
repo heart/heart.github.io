@@ -13,12 +13,11 @@
   <body>
     <header class="site-header">
       <div class="container nav-row">
-        <a class="logo" href="{{ "/" | relative_url }}">CT</a>
+        <a class="logo" href="{{ "/" | relative_url }}">HT</a>
         <nav class="site-nav">
           <a href="{{ "/" | relative_url }}#about">About</a>
           <a href="{{ "/" | relative_url }}#projects">Projects</a>
-          <a href="{{ "/" | relative_url }}#writing">Writing</a>
-          <a href="{{ "/" | relative_url }}#contact">Contact</a>
+          <a href="{{ "/" | relative_url }}#content">Content</a>
         </nav>
       </div>
     </header>
@@ -30,11 +29,6 @@
     <footer class="site-footer">
       <div class="container footer-row">
         <div>© {{ "now" | date: "%Y" }} {{ site.title }}</div>
-        <div class="footer-links">
-          <a href="https://github.com/" aria-label="GitHub">GitHub</a>
-          <a href="https://linkedin.com/" aria-label="LinkedIn">LinkedIn</a>
-          <a href="mailto:you@company.com" aria-label="Email">Email</a>
-        </div>
       </div>
     </footer>
   </body>
