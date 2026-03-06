@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Rust Safe by Design ไม่ได้แปลว่า “กันแฮกได้”'
-date: 2026-03-05 11:30:00 +0700
+date: 2026-02-15 11:30:00 +0700
 categories: rust philosophy
 ---
 
