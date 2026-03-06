@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ''
+title: 'มาเรียนเรื่อง Thread ใน Rust แบบไม่ต้องกลัว Data Race'
 date: 2026-03-06 14:52:35 +0700
 categories: 'rust thread'
 ---
