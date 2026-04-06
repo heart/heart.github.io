@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'ทำไมโลกกำลังจะเข้าสู่ Contract-Driven Architecture'
-date: 2026-04-15 10:32:00 +0700
+date: 2026-04-06 11:03:08 +0700
 categories: AI
 ---
 
